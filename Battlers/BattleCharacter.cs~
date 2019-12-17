@@ -1,0 +1,10 @@
+﻿// Copyright - SeleDreams - 2019
+
+namespace SeleDreams.DataManagement.BattleData
+{
+    using System;
+    public class BattleCharacter : Character
+    {
+       
+    }
+}

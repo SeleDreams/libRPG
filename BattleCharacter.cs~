@@ -1,0 +1,13 @@
+﻿// Copyright - 2019 - SeleDreams - All rights reserved
+
+namespace SeleDreams.DataManagement
+{   
+    using System;
+    public class BattleCharacter : DataObject
+    {
+        public BattleCharacter(string name = "")
+        {
+            Name = name;
+        }
+    }
+}

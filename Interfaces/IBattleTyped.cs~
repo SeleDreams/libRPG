@@ -1,0 +1,8 @@
+﻿using System;
+namespace SeleDreams.DataManagement.BattleData
+{
+    public interface IBattleTyped
+    {
+        BattleType BType { get; set; }
+    }
+}
