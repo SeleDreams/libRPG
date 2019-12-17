@@ -27,34 +27,38 @@
   <ItemGroup>
     <Compile Include="Battlers\LeadBattler.cs" />
     <Compile Include="Battlers\Battler.cs" />
-    <Compile Include="Interfaces\INamed.cs" />
-    <Compile Include="Interfaces\IIdentifiable.cs" />
-    <Compile Include="Interfaces\ITyped.cs" />
+    <Compile Include="Data\Interfaces\INamed.cs" />
+    <Compile Include="Data\Interfaces\IIdentifiable.cs" />
+    <Compile Include="Data\Interfaces\ITyped.cs" />
     <Compile Include="Battlers\SubBattler.cs" />
     <Compile Include="Battlers\IBattler.cs" />
-    <Compile Include="Party\Party.cs" />
-    <Compile Include="Party\IParty.cs" />
+    <Compile Include="Gameplay\Battle\Party\Party.cs" />
+    <Compile Include="Gameplay\Battle\Party\IParty.cs" />
     <Compile Include="GlobalPartySettings.cs" />
-    <Compile Include="Exceptions\FullPartyException.cs" />
-    <Compile Include="Exceptions\EmptyPartyException.cs" />
-    <Compile Include="Stats\IStatsManager.cs" />
+    <Compile Include="Data\Exceptions\FullPartyException.cs" />
+    <Compile Include="Data\Exceptions\EmptyPartyException.cs" />
+    <Compile Include="Gameplay\Battle\Stats\IStatsManager.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Stats\StatsManager.cs" />
-    <Compile Include="Stats\Stat.cs" />
-    <Compile Include="Stats\IStat.cs" />
-    <Compile Include="Database\IDatabase.cs" />
-    <Compile Include="Database\IDatabaseItem.cs" />
+    <Compile Include="Gameplay\Battle\Stats\StatsManager.cs" />
+    <Compile Include="Gameplay\Battle\Stats\Stat.cs" />
+    <Compile Include="Gameplay\Battle\Stats\IStat.cs" />
+    <Compile Include="Data\Database\IDatabase.cs" />
+    <Compile Include="Data\Database\IDatabaseItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Battlers\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Party\" />
-    <Folder Include="Exceptions\" />
-    <Folder Include="Stats\" />
-    <Folder Include="Database\" />
+    <Folder Include="Data\Interfaces\" />
+    <Folder Include="Gameplay\Battle\Party\" />
+    <Folder Include="Data\Exceptions\" />
+    <Folder Include="Gameplay\Battle\Stats\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
+    <Compile Include="Data\Database\CDBDatabase.cs" />
+    <Compile Include="Gameplay\Overworld\Character.cs" />
+    <Folder Include="Gameplay\Battle\" />
+    <Folder Include="Data\" />
+    <Folder Include="Gameplay\Overworld\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ProjectExtensions>
