@@ -1,11 +1,11 @@
 ﻿// Copyright - SeleDreams - 2019
-namespace SeleDreams.libRPG
+namespace libRPG.Battle
 {
     using System.Collections.Generic;
-    using Newtonsoft.Json;
-    public class StatsManager : IStatsManager
+    
+    public class Stats : IStats
     {
-        public StatsManager() =>
+        public Stats() =>
                 _stats = new Dictionary<int, IStat>();
 
         public void Save() => 

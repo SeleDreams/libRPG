@@ -1,8 +1,9 @@
 ﻿// Copyright - SeleDreams - 2019
-namespace SeleDreams.libRPG
+namespace libRPG.Party
 {
     using System.Collections.Generic;
-    using SeleDreams.libRPG.Exceptions;
+    using libRPG.Exceptions;
+    using libRPG.Battle;
 
     /// <summary>
     /// Party containing battlers.

@@ -1,5 +1,5 @@
 ﻿// Copyright - SeleDreams - 2019
-namespace SeleDreams.libRPG
+namespace libRPG
 {
     public interface ITyped
     {

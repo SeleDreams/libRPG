@@ -1,6 +1,7 @@
 ﻿// Copyright - SeleDreams - 2019
-namespace SeleDreams.libRPG
+namespace libRPG.Party
 {
+    using libRPG.Battle;
     public interface IParty
     {
         IBattler GetMember(int id);

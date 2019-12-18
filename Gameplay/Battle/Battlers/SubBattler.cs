@@ -1,5 +1,5 @@
-﻿// // Copyright - SeleDreams - 2019
-namespace SeleDreams.libRPG
+﻿// Copyright - SeleDreams - 2019
+namespace libRPG.Battle
 {
     public class SubBattler : Battler
     {

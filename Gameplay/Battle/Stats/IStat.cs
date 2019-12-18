@@ -1,6 +1,6 @@
 ﻿// Copyright - SeleDreams - 2019
 using System;
-namespace SeleDreams.libRPG
+namespace libRPG.Battle
 {
     public interface IStat
     {

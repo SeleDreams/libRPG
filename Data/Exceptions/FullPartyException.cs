@@ -1,6 +1,6 @@
 ﻿// Copyright - SeleDreams - 2019
 using System;
-namespace SeleDreams.libRPG.Exceptions
+namespace libRPG.Exceptions
 {
     /// <summary>
     /// Exception thrown when attempting to add more members to a party than the maximum amount authorized.

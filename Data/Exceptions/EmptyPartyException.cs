@@ -1,5 +1,5 @@
 ﻿// Copyright - SeleDreams - 2019
-namespace SeleDreams.libRPG.Exceptions
+namespace libRPG.Exceptions
 {
     using System;
     /// <summary>

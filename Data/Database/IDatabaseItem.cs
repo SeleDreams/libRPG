@@ -1,8 +1,9 @@
 ﻿// Copyright - SeleDreams - 2019
-using System;
-namespace SeleDreams.libRPG
+namespace libRPG.Data
 {
-    public interface IDatabaseItem
+    using libRPG;
+    public interface IDatabaseItem : IIdentifiable
     {
+
     }
 }

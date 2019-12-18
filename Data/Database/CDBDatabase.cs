@@ -1,4 +1,5 @@
-namespace libRPG.Database
+// Copyright - SeleDreams - 2019
+namespace libRPG.Data
 {
     public class CDBDB
     {
