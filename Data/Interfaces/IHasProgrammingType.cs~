@@ -1,9 +1,0 @@
-﻿// Copyright - SeleDreams - 2019
-namespace SeleDreams.DataManagement.Interfaces
-{
-    using SeleDreams.DataManagement.BattleData;
-    public interface IHasProgrammingType
-    {
-        ProgrammingType PType { get; set; }
-    }
-}

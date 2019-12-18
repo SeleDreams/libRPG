@@ -1,9 +1,0 @@
-﻿{
-  "dependencies": {
-    "NETStandard.Library": "2.0.3",
-    "Newtonsoft.Json": "12.0.3"
-  },
-  "frameworks": {
-    "netstandard1.4": {}
-  }
-}

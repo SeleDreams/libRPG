@@ -1,71 +1,11 @@
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7ACDD81B-3E82-41D3-9E5E-5EF115C095F6}</ProjectGuid>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <OutputType>Library</OutputType>
-    <RootNamespace>SeleDreams.libRPG</RootNamespace>
-    <AssemblyName>seledreams.datatypes</AssemblyName>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworks>netstandard2.1;net45</TargetFrameworks>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Compile Include="Gameplay\Battle\Battlers\LeadBattler.cs" />
-    <Compile Include="Gameplay\Battle\Battlers\Battler.cs" />
-    <Compile Include="Data\Interfaces\INamed.cs" />
-    <Compile Include="Data\Interfaces\IIdentifiable.cs" />
-    <Compile Include="Data\Interfaces\ITyped.cs" />
-    <Compile Include="Gameplay\Battle\Battlers\SubBattler.cs" />
-    <Compile Include="Gameplay\Battle\Battlers\IBattler.cs" />
-    <Compile Include="Data\Party\Party.cs" />
-    <Compile Include="Data\Party\IParty.cs" />
-    <Compile Include="Data\Party\GlobalPartySettings.cs" />
-    <Compile Include="Data\Exceptions\FullPartyException.cs" />
-    <Compile Include="Data\Exceptions\EmptyPartyException.cs" />
-    <Compile Include="Gameplay\Battle\Stats\IStatsManager.cs" />
-    <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Gameplay\Battle\Stats\StatsManager.cs" />
-    <Compile Include="Gameplay\Battle\Stats\Stat.cs" />
-    <Compile Include="Gameplay\Battle\Stats\IStat.cs" />
-    <Compile Include="Data\Database\IDatabase.cs" />
-    <Compile Include="Data\Database\IDatabaseItem.cs" />
+  <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Gameplay\Battle\Battlers\" />
-    <Folder Include="Gameplay\Battle\Stats\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="project.json" />
-    <Compile Include="Data\Database\CDBDatabase.cs" />
-    <Compile Include="Gameplay\Overworld\Character.cs" />
-    <Folder Include="Gameplay\Battle\" />
-    <Folder Include="Gameplay\Overworld\" />
-    <Folder Include="Data\Party\" />
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <ProjectExtensions>
-    <MonoDevelop>
-      <Properties>
-        <Policies>
-          <DotNetNamingPolicy DirectoryNamespaceAssociation="None" ResourceNamePolicy="FileFormatDefault" />
-          <StandardHeader IncludeInNewFiles="True" Text="Copyright - ${AuthorName} - ${Year}" />
-        </Policies>
-      </Properties>
-    </MonoDevelop>
-  </ProjectExtensions>
+
 </Project>

@@ -1,8 +1,9 @@
-using System;
-
 namespace libRPG.Database
 {
-    public class CDBDatabase
+    public class CDBDB
     {
+        public CDBDB(){
+
+        }
     }
 }
