@@ -11,10 +11,27 @@ namespace libRPG.Battle
             _minValue = min;
         }
 
-        public float Value 
-        { 
+        public float Value
+        {
             get => _value;
-            set => _value = (value < _minValue) ? _minValue : (value > _maxValue) ? _maxValue : value;
+            set
+            {
+                bool isLowerThanMin = value < _minValue;
+                bool isHigherThanHighest = value > _maxValue;
+                if (isLowerThanMin)
+                {
+                    _value = _minValue;
+                }
+                else if (isHigherThanHighest)
+                {
+                    _value = _maxValue;
+                }
+                else
+                {
+                    _value = value;
+                }
+
+            }
         }
 
         public float Max { get => _maxValue; }

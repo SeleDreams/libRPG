@@ -14,6 +14,7 @@ namespace libRPG.Battle
         public void Hit(int damages){
             OnHit(damages);
         }
+        
         public void OnReceiveDamages(int damages)
         {
 
